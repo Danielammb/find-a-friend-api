@@ -1,0 +1,39 @@
+{
+  "name": "find-a-friend-api",
+  "version": "1.0.0",
+  "description": "projeto backend utilizando node-js",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start:dev": "tsx watch src/server.ts",
+    "build": "tsup src --out-dir build",
+    "start": "node build/server.js"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^11.0.2",
+    "@fastify/jwt": "^9.1.0",
+    "@prisma/client": "6.1.0",
+    "bcryptjs": "2.4.3",
+    "dayjs": "^1.11.13",
+    "dotenv": "16.4.7",
+    "fastify": "5.2.0",
+    "zod": "3.24.1"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "2.4.6",
+    "@types/node": "22.10.2",
+    "@types/supertest": "^6.0.3",
+    "@vitest/coverage-v8": "2.1.8",
+    "@vitest/ui": "^2.1.8",
+    "npm-run-all": "^4.1.5",
+    "prisma": "6.1.0",
+    "supertest": "^7.1.0",
+    "tsup": "8.3.5",
+    "tsx": "4.19.2",
+    "typescript": "5.7.2",
+    "vite-tsconfig-paths": "5.1.4",
+    "vitest": "2.1.8"
+  },
+  "author": "Daniela Medeiros Batista",
+  "license": "ISC"
+}
